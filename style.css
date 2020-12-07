@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 body {
   margin: 0;
@@ -56,7 +56,7 @@ nav {
   font-size: 25px;
   font-weight: bold;
   color: #292929;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   justify-items: left;
 }
 
@@ -83,7 +83,7 @@ nav {
 }
 
 .name h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   margin: 0;
   letter-spacing: 2px;
@@ -106,6 +106,49 @@ nav {
   transition: all ease 0.5s;
 }
 
-#robyn{
-  color:#17d1ac;
+#robyn {
+  color: #17d1ac;
+}
+
+.social {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+}
+
+.social a {
+  margin: 6px 12px;
+}
+
+.social i {
+  color: rgba(18, 17, 17, 0.4);
+  font-size: 2rem;
+}
+
+.social a:hover i {
+  color: #17d1ac;
+  transition: all ease 0.5s;
+}
+
+.arrow {
+  align-self: end;
+  width: 0%;
+  height: 15%;
+  margin-bottom: 4em;
+  position: absolute;
+  bottom: 0px;
+  left: -3px;
+  border-right: 1px solid rgba(41, 41, 41, 0.3);
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: #292929 transparent transparent transparent;
+  right: -0.7em;
+  bottom: -2px;
 }
