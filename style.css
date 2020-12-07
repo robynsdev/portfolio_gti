@@ -153,3 +153,63 @@ nav {
   right: -0.7em;
   bottom: -2px;
 }
+
+#about {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 5% 0px 5%;
+}
+
+.about-text {
+  font-family: sans-serif;
+  width: 50%;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  color: #17d1ac;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.about-text h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: rgba(251, 251, 251, 0.9);
+}
+
+.about-text button {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #17d1ac;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.about-text button:hover {
+  background-color: #fff;
+  transition: all ease 0.4s;
+}
+
+#robyn-image {
+  width: 300px;
+  height: 100%;
+}
