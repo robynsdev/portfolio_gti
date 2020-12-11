@@ -304,28 +304,6 @@ h2 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* #contact {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background-color: #f4f7ff;
-  margin: 20px 0;
-  box-sizing: border-box;
-  box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.04));
-}
-
-#contact h1 {
-  font-size: 2rem;
-  color: #1e1e1e;
-  font-family: "Poppins", sans-serif;
-  margin: 10px 0;
-  padding: 5px;
-  letter-spacing: 4px;
-} */
-
 #contact-form {
   width: 100%;
   height: 90vh;
@@ -439,10 +417,34 @@ h2 {
   letter-spacing: 2px;
 }
 
+.social-bottom {
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+  margin: 20px;
+}
+
+.social-bottom a {
+  margin: 6px 12px;
+}
+
+.social-bottom i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.social-bottom a:hover i {
+  color: #17d1ac;
+  transition: all ease 0.5s;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
 @media (max-width: 1190px) {
-  #main {
-    background-size: 1150px;
-  }
   .name {
     left: 10%;
     top: 50%;
@@ -606,7 +608,8 @@ h2 {
     margin: 0 20px;
   }
 
-  .social {
+  .social,
+  .social-bottom {
     left: 50px;
     transform: translateX(-10px);
   }
