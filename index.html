@@ -11,38 +11,52 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $("nav ul").toggleClass("active-menu");
+        });
+      });
+    </script>
     <nav>
-      <a href="" class="logo">@ROBYNSDEV</a>
+      <a href="#main" class="logo">@ROBYNSDEV</a>
+      <!-- bar-icons -->
+      <div class="toggle"></div>
+      <!-- menu -->
       <ul class="menu">
-        <li><a href="" class="active">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#main" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-form">Contact</a></li>
         <li><a href=""></a></li>
       </ul>
     </nav>
-
   </head>
   <body>
     <section id="main">
       <div class="name">
         <p>Hello</p>
         <h1>I'm <span id="robyn">Robyn</span> Lim</h1>
-        <p class="details">Junior Fullstack developer</p>
+        <p class="details">A full stack developer</p>
         <a href="" class="resume-btn">Resume</a>
       </div>
       <div class="social">
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/robyn-lim-738430a2/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/robynsdev"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/robynsdev"
+          ><i class="fab fa-twitter"></i
+        ></a>
       </div>
-      <div class="arrow"></div>
     </section>
 
     <section id="about">
       <div class="about-text">
         <h1>About Me</h1>
-        <h2>Fullstack developer</h2>
+        <h2>HTML, CSS, JavaScript, Ruby, Rails, MERN</h2>
         <p>
           I'm an enthusiastic junior full stack developer who made the decision
           to transition into tech because I got hooked on the satisfaction of
@@ -62,11 +76,121 @@
           games with friends, tapping at my Nintendo switch, rock climbing or
           learning to play guitar.
         </p>
-        <button>Projects</button>
+        <a href="#contact-form" class="button">Contact Me</a>
       </div>
       <div class="about-model">
-        <img id="robyn-image" src="/images/robyn-circle.svg" alt="Photo of Robyn" />
+        <img
+          id="robyn-image"
+          src="/images/robyn-circle.svg"
+          alt="Photo of Robyn"
+        />
       </div>
+    </section>
+
+    <section id="projects">
+      <div class="p-heading">
+        <h1>Projects</h1>
+      </div>
+      <div class="p-b-container">
+        <!-- box 1 -->
+        <div class="p-box">
+          <div class="p-b-img">
+            <div class="p-type">GAME HUB</div>
+            <img
+              src="/images/p_game_hub.png"
+              alt="Game Hub Project screenshot"
+            />
+          </div>
+          <div class="p-b-tech">RUBY, RAILS,
+            POSTGRESQL, HTML, SASS, BOOTSTRAP</div>
+          <div class="p-b-text">
+            <a href="https://twomkt.herokuapp.com/"
+              >Two-sided marketplace web app where users can buy and sell board
+              games. Features include authentication, authorization, search,
+              filter, admin dashboard, external image hosting. RUBY, RAILS,
+              POSTGRESQL, HTML, SASS, BOOTSTRAP
+            </a>
+          </div>
+        </div>
+        <!-- box 2 -->
+        <div class="p-box">
+          <div class="p-b-img">
+            <div class="p-type">HIGH-LOW</div>
+            <img
+              src="/images/p_high_low.png"
+              alt="HIGH-LOW Project screenshot"
+            />
+          </div>
+          <div class="p-b-text">
+            <a
+              href="https://github.com/robynsdev/terminal_highlow
+            "
+              >Terminal app game where players are dealt a card, and they guess
+              if their card is higher or lower than the dealer. The goal is to
+              get the highest point total and win streak. RUBY, CLI
+            </a>
+          </div>
+        </div>
+        <!-- box 3 -->
+        <div class="p-box">
+          <div class="p-b-img">
+            <div class="p-type">PORTFOLIO</div>
+            <img
+              src="/images/pen-4337524_1920.jpg"
+              alt="HIGH-LOW Project screenshot"
+            />
+          </div>
+          <div class="p-b-text">
+            <a
+              href="https://robynlim.netlify.app/
+            "
+              >Frontend website of my portfolio with a focus on responsive
+              design. HTML CSS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <form action="https://formspree.io/f/xrgoykqn" method="POST">
+        <div class="contact-left">
+          <h1 class="c-l-heading">
+            <span style="border-bottom: 3px solid #1ed98b">Conta</span>ct Me
+          </h1>
+          <div class="form-name">
+            <label for="fi-name">Full Name</label>
+            <input
+              type="text"
+              id="fi-name"
+              name="fi-name"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="form-email">
+            <label for="fi-email">Email</label>
+            <input
+              type="email"
+              id="fi-email"
+              name="fi-email"
+              placeholder="Example@email.com"
+            />
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="message">
+            <label for="fi-message">Message</label>
+            <textarea
+              name="f-message"
+              id="f-message"
+              cols="5"
+              rows="20"
+              placeholder="Write Message..."
+            ></textarea>
+          </div>
+          <button type="submit" value="Send">Submit</button>
+        </div>
+      </form>
     </section>
   </body>
 </html>
