@@ -500,7 +500,7 @@ h2 {
   .toggle {
     display: block;
   }
-  .toggle:before {
+  /* .toggle:before {
     content: "\f0c9";
     font-family: "Font Awesome 5 Free";
     line-height: 0px;
@@ -509,7 +509,8 @@ h2 {
   }
   .toggle.active:before {
     content: "\f00d";
-  }
+  } */
+
   nav {
     padding: 10px 30px;
   }

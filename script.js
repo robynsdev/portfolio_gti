@@ -1,19 +1,11 @@
-const toggle = document.getElementsByClassName("toggle");
-const navLinks = document.querySelectorAll(".nav-link");
+const toggle = document.getElementById("burger");
+const menu = document.querySelector(".menu");
+
+console.log(toggle);
 
 toggle.addEventListener("click", () => {
-  toggle.classList.add("active");
+  toggle.classList.toggle("active");
+  menu.classList.toggle("active-menu");
 });
 
-navLinks.forEach((navLink) => {
-  navLink.addEventListener("click", () => {
-    removeActiveClasses();
-    navLink.classList.add("active");
-  });
-});
-
-function removeActiveClasses() {
-  navLinks.forEach((navLink) => {
-    navLink.classList.remove("active");
-  });
-}
+// fas fa-times
