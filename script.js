@@ -1,11 +1,18 @@
-const toggle = document.getElementById("burger");
+const burger = document.getElementById("burger");
 const menu = document.querySelector(".menu");
 
-console.log(toggle);
+console.log(burger.classList == "fas fa-bars");
 
-toggle.addEventListener("click", () => {
-  toggle.classList.toggle("active");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
   menu.classList.toggle("active-menu");
+  if (burger.classList == "active") {
+    burger.classList.remove("fa-bars");
+    burger.classList.add("fa-times");
+  } else {
+    burger.classList.remove("fa-times");
+    burger.classList.add("fa-bars");
+  }
 });
 
 // fas fa-times
