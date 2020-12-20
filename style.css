@@ -22,7 +22,7 @@ nav {
   box-sizing: border-box;
   padding: 10px 50px;
   background-color: #f4f7ff;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05); */
   z-index: 1;
 }
 
@@ -605,10 +605,13 @@ h2 {
 
 @media (max-width: 500px) {
   .name {
+    box-sizing: border-box;
     width: 100%;
     margin: 0 20px;
   }
-
+  .name h1 {
+    font-size: 2.5rem;
+  }
   .social,
   .social-bottom {
     left: 50px;
@@ -617,5 +620,11 @@ h2 {
 
   .about-model img {
     display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .name h1 {
+    font-size: 1.8rem;
   }
 }
